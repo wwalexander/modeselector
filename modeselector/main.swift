@@ -131,9 +131,9 @@ struct ModeSelector: ParsableCommand {
             guard let refreshRate = refreshRate else { return true }
             return mode.refreshRate > Double(refreshRate) - 1
         }.sorted {
-            if $0.element.width * $0.element.height < $1.element.width * $1.element.height { return true }
             if $0.element.pixelWidth * $0.element.pixelHeight < $1.element.pixelWidth * $1.element.pixelHeight { return true }
             if $0.element.refreshRate < $1.element.refreshRate { return true }
+            if $0.element.width * $0.element.height < $1.element.width * $1.element.height { return true }
             return $0.offset < $1.offset
         }.reversed()
     
