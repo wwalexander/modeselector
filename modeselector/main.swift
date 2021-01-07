@@ -80,6 +80,8 @@ enum ModeSelectorError: Error, CustomStringConvertible {
 }
 
 struct ModeSelector: ParsableCommand {
+    static var configuration = CommandConfiguration(commandName: "modeselector")
+    
     @Option(name: .shortAndLong, help: "The desired width in pixels.")
     var width: UInt?
     
