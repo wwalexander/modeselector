@@ -1,8 +1,8 @@
 modeselector
 ============
 
-    USAGE: mode-selector [--width <width>] [--height <height>] [--px-width <px-width>] [--px-height <px-height>] [--rate <rate>] [--mode <mode>]
-    
+    USAGE: modeselector [--width <width>] [--height <height>] [--px-width <px-width>] [--px-height <px-height>] [--rate <rate>] [--mode <mode>]
+
     OPTIONS:
       -w, --width <width>     The desired width in pixels. 
       -h, --height <height>   The desired height in pixels. 
